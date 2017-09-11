@@ -1,4 +1,3 @@
-
 cd /home/nagendran/CI-CD-docker/
 docker stop helloworld
 docker rm helloworld
