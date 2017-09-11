@@ -1,5 +1,6 @@
 cd /home/nagendran/CI-CD-docker/
-docker stop helloworld
-docker rm helloworld
+docker stop helloworld-test
+docker rm helloworld-test
+docker rmi -f helloworld:latest
 docker build -t helloworld /home/nagendran/CI-CD-docker/
 docker run -d --name helloworld-test -p 80:80 -v /home/nagendran/CI-CD-docker/src/:/var/www/html helloworld
